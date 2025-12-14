@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Mishra | Personal Website</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    nav {
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: #fff; }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #020617;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #60a5fa;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 5px;
+    }
+
+    .info p { margin-bottom: 8px; }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px 10px 0 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: #1e40af;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact a:hover { background: #2563eb; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+      margin-top: 40px;
+    }
+
+    /* Simple animation */
+    .fade-in {
+      animation: fade 1.2s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Abhishek Mishra</h1>
+    <p>Student | Personal Website</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>Hello! My name is <b>Abhishek Mishra</b>. I am from <b>Ayodhya</b>. This is my personal website made using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="info">
+      <p>• High School Passout (2023)</p>
+      <p>  SSV Inter College, Ayodhya</p>
+      <br />
+      <p>• 12th Passout (2025)</p>
+      <p>  SSV Inter College, Ayodhya</p>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <a href="https://wa.me/917068725944" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/whyyabhiiiii" target="_blank">Instagram</a>
+    </div>
+    <p style="margin-top:15px;">Address: Ayodhya, Uttar Pradesh, India</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Abhishek Mishra | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // JavaScript for dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
